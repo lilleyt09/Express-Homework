@@ -59,9 +59,13 @@ const renderActiveNote = () => {
     noteTitle.value = activeNote.title;
     noteText.value = activeNote.text;
   } else {
-    noteTitle.value = '';
-    noteText.value = '';
-  }
+      /* Fixes the starter code to remove the 'readonly' 
+        attribute when hitting the newNoteBtn */
+      noteTitle.removeAttribute('readonly');
+      noteText.removeAttribute('readonly');
+      noteTitle.value = '';
+      noteText.value = '';
+    }
 };
 
 const handleNoteSave = () => {
