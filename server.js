@@ -8,7 +8,7 @@ var PORT = process.env.PORT || 4900;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./db/routes/apiRoutes")(app);
+require("./db/routes/htmlRoutes")(app);
 
 app.listen(PORT, () => console.log("Server is running on " + PORT));
