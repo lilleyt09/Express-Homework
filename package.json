@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "fs": "*",
+    "fs": "0.0.2",
     "node": "14.17.3",
     "path": "^0.12.7"
   }
